@@ -2,8 +2,6 @@
 #include <assert.h>
 #include "ElectronicColorCode.h"
 #include "DefineColorNames.h"
-#include "NumberToPair_Test.h"
-#include "PairToNumber_Test.h"
 #include"TestColorCode.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
