@@ -6,6 +6,8 @@
 
 extern int numberOfMajorColors;
 extern int numberOfMinorColors;
+extern const char* MajorColorNames[];
+extern const char* MinorColorNames[];
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
