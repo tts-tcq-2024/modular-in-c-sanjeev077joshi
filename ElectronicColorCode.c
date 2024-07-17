@@ -4,8 +4,7 @@
 #include "DefineColorNames.h"
 #include "NumberToPair_Test.h"
 #include "PairToNumber_Test.h"
-
-const int MAX_COLORPAIR_NAME_CHARS = 16;
+#include"TestColorCode.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
