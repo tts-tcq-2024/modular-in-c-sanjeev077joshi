@@ -1,9 +1,16 @@
-#include"DefineColorNames.h"
+#include <stdio.h>
+
+const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
+int numberOfMajorColors = sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+
+const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 void PrintColorCodingReference() {
     int pairNumber = 1;
-    for (int major = White; major <= Violet; major++) {
-        for (int minor = Blue; minor <= Slate; minor++) {
+
+    for (int major = 0; major < numberOfMajorColors; major++) {
+        for (int minor = 0; minor < numberOfMinorColors; minor++) {
             printf("%d. %s-%s\n", pairNumber, MajorColorNames[major], MinorColorNames[minor]);
             pairNumber++;
         }
