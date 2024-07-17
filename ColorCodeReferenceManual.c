@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include "ColorCodeReferenceManual.h"
 
-int numberOfMajorColors = sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-
 void PrintColorCodingReference() {
     int pairNumber = 1;
 
