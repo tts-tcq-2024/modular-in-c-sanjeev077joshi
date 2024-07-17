@@ -2,7 +2,8 @@
 #include <assert.h>
 #include "ElectronicColorCode.h"
 #include "DefineColorNames.h"
-#include"TestColorCode.h"
+#include "TestColorCode.h"
+#include "ColorCodeReferenceManual.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
@@ -31,6 +32,8 @@ int main() {
 
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
+
+    PrintColorCodingReference();
 
     return 0;
 }
