@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
 #include "ElectronicColorCode.h"
-#include "DefineColorNames.h"
 #include "TestColorCode.h"
 #include "ColorCodeReferenceManual.h"
 
