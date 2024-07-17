@@ -4,6 +4,9 @@
 #include "TestColorCode.h"
 #include "ColorCodeReferenceManual.h"
 
+extern int numberOfMajorColors;
+extern int numberOfMinorColors;
+
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
